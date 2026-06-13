@@ -1,5 +1,6 @@
 package model.dao;
 
+import db.DB;
 import model.dao.impl.SellerDaoJDBC;
 
 // FABRICA = classe auxiliar responsavel por instanciar os DAOS
@@ -11,6 +12,6 @@ public class DaoFactory {
 	 * nao expoe a implementacao
 	 */
 	public static SellerDAO createSellerDao() {
-		return new SellerDaoJDBC();
+		return new SellerDaoJDBC(DB.getConnection());
 	}
 }
