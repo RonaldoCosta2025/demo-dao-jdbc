@@ -21,7 +21,7 @@ public class SellerDaoJDBC implements SellerDAO {
 	// essa variavel fica disponivel em qualquer lugar nesta classe
 	private Connection conn;
 
-	// faz a dependenci com o bd
+	// faz a dependencia com o bd
 	public SellerDaoJDBC(Connection conn) {
 		this.conn = conn;
 	}

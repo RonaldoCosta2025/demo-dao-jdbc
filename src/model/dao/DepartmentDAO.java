@@ -13,7 +13,7 @@ public interface DepartmentDAO {
 	void update(Department obj);
 
 	// deleta no bd
-	void deleteById(Department obj);
+	void deleteById(Integer id);
 
 	// busca por id
 	Department findById(Integer id);
